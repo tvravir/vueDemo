@@ -31,13 +31,12 @@
     <form @submit="formSubmit">
       <div>
         <label for="fname" class="form-label">First name:</label><br>
-        <input type="text" class="form-control w-50 mx-auto" id="fname" name="fname"
-          v-model="testForm.firstName.trim"><br>
+        <input type="text" class="form-control w-50 " id="fname" name="fname" v-model="testForm.firstName.trim"><br>
       </div>
 
       <div>
         <label for="description" class="form-label">Description:</label><br>
-        <textarea class="form-control w-50 mx-auto" id="description" name="description"
+        <textarea class="form-control w-50" id="description" name="description"
           v-model="testForm.description.trim"></textarea><br><br>
       </div>
       <div class="d-flex justify-content-center">
@@ -57,7 +56,7 @@
       </div>
       <div>
         <label class="form-label" for="select">Select Your city</label>
-        <select class="form-select" aria-label="Default select example" v-model="testForm.selectCity" id="select">
+        <select class="form-select w-50 " aria-label="Default select example" v-model="testForm.selectCity" id="select">
           <option value="">Open this select menu</option>
           <option value="1">Ahemdabad</option>
           <option value="2">Rajkot</option>
@@ -66,7 +65,7 @@
       </div>
       <div>
         <label class="form-label" for="preferCity">Prefer City to Work</label>
-        <select class="form-select" aria-label="Default select example" multiple v-model="testForm.preferCity"
+        <select class="form-select w-50 " aria-label="Default select example" multiple v-model="testForm.preferCity"
           id="preferCity">
           <option value="1">Ahemdabad</option>
           <option value="2">Rajkot</option>
@@ -160,7 +159,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   /* margin-top: 60px; */
 }
